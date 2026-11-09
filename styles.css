@@ -207,3 +207,35 @@ body{background:#070912}.site-shell{z-index:1;background:rgba(13,16,28,.52);back
 .home-detail .activity-description p{margin-top:9px}
 #projects .home-detail{align-items:flex-start}
 @media(max-width:520px){.home-sections{padding-bottom:42px}.home-section{margin-bottom:26px}.section-heading{margin:0 20px 13px}.home-detail{min-height:120px}}
+
+
+/* Navy-blue visual identity and centered homepage */
+:root{--navy-950:#050d20;--navy-900:#08152f;--navy-800:#10264b;--navy-700:#183967;--navy-accent:#7daeff}
+body{background:#050b19;color:#f3f7ff}
+.site-shell{
+ background:
+ radial-gradient(115% 85% at 12% 0%,rgba(69,119,204,.17),transparent 48%),
+ radial-gradient(100% 90% at 100% 100%,rgba(24,69,139,.18),transparent 52%),
+ linear-gradient(145deg,rgba(15,35,70,.34),rgba(6,17,38,.3) 48%,rgba(11,29,59,.34));
+ border-color:rgba(142,183,255,.2)
+}
+.background-vignette{background:radial-gradient(ellipse at center,transparent 22%,rgba(2,7,18,.72) 100%)}
+.status-banner{background:linear-gradient(110deg,rgba(18,48,99,.78),rgba(12,34,72,.68));border-color:rgba(111,164,255,.34)}
+.details-section{background:linear-gradient(125deg,rgba(17,43,85,.35),rgba(7,22,48,.3));border-color:rgba(125,174,255,.2)}
+.menu-panel{background:rgba(5,15,35,.94);border-color:rgba(137,180,255,.22)}
+.menu-item:hover,.menu-item.active{background:rgba(37,76,139,.3);border-color:rgba(126,174,255,.24)}
+.menu-toggle,.close-menu{background:rgba(9,25,53,.84);border-color:rgba(128,174,255,.24)}
+.menu-toggle:hover,.close-menu:hover{background:rgba(28,62,115,.7);border-color:rgba(145,188,255,.48)}
+.intro{text-align:center}
+.hero-content{margin-inline:auto;text-align:center}
+.status-banner{width:min(100%,560px);margin-inline:auto;text-align:left}
+.social-links{justify-content:center}
+.commission-link{justify-content:center}
+.topbar{justify-content:flex-end}
+.settings-toggle{margin-left:auto}
+.menu-head{justify-content:space-between}
+.settings-title{font-size:20px;font-weight:650;letter-spacing:-.03em;color:#f3f7ff}
+.admin-login{margin-top:8px;border-color:rgba(126,174,255,.18);color:#dce9ff}
+.admin-arrow{width:16px;height:16px;margin-left:auto}
+.menu-icon svg{stroke-width:1.8}
+@media(max-width:520px){.hero-content{width:100%}.status-banner{max-width:100%}}
