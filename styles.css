@@ -161,3 +161,15 @@ body{background:#070912}.site-shell{z-index:1;background:rgba(13,16,28,.52);back
 .music-card{
   background:linear-gradient(125deg,rgba(255,255,255,.075),rgba(170,195,240,.018) 55%,rgba(255,255,255,.04));
 }
+
+/* Dedicated content pages */
+.page-shell{min-height:calc(100svh - 40px)}
+.page-content{flex:1;padding:54px 7vw 72px}
+.page-heading{margin:0 0 28px}
+.page-heading h1{font-size:clamp(36px,6vw,58px);letter-spacing:-.055em;line-height:1.05;margin:10px 0 0;font-weight:650}
+.page-section{margin:0;padding:30px;min-height:180px}
+.page-section>div{width:100%}
+.page-section p{font-size:16px}
+.home-music{margin-top:0}
+@media(min-width:760px){.page-content{padding-top:76px;padding-bottom:100px}}
+@media(max-width:520px){.page-content{padding:42px 20px 60px}.page-heading{margin-bottom:22px}.page-section{margin:0;padding:23px 20px;min-height:150px}}
