@@ -1,23 +1,28 @@
 # Jake's portfolio
 
-Static frontend with Vercel serverless API routes, Discord OAuth admin access, Upstash Redis persistence, and public Discord presence via Lanyard.
+A static portfolio with Vercel serverless API routes, Discord OAuth admin access, Upstash Redis persistence, and public Discord presence via Lanyard.
 
-## Required Vercel environment variables
+## Setup
 
-- `SITE_ORIGIN`: exact production origin, e.g. `https://your-domain.example` (no trailing slash).
-- `DISCORD_CLIENT_ID`: Discord OAuth application client ID.
-- `DISCORD_CLIENT_SECRET`: Discord OAuth application client secret.
-- `DISCORD_REDIRECT_URI`: exact callback URL `https://your-domain.example/api/auth/callback`.
-- `SESSION_SECRET`: long random secret, at least 32 characters.
-- `UPSTASH_REDIS_REST_URL`: Upstash Redis REST URL.
-- `UPSTASH_REDIS_REST_TOKEN`: Upstash Redis REST token.
+See **[SETUP.md](./SETUP.md)** for the complete handover guide. It explains the required accounts, Discord OAuth configuration, Upstash Redis setup, Vercel deployment, and environment variables.
 
-In the Discord Developer Portal, add the exact `DISCORD_REDIRECT_URI` to OAuth2 Redirects. OAuth only requests the `identify` scope. The API only grants admin access to Discord user ID `1388360587590893649`.
+Copy `.env.example` as a reference for the variable names. Never commit real credentials.
+
+## Admin access
+
+Open `/admin.html` and sign in with Discord. Only this Discord user ID is authorized:
+
+`1388360587590893649`
+
+The admin panel can update the public bio, GitHub URL, projects, stack, setup, and music/activity text. Updates are stored in Upstash Redis.
 
 ## Discord presence
 
-The public status widget uses Lanyard's public API. Jake must join the Lanyard Discord community for his presence to be shared. Activity visibility also depends on Discord activity privacy settings.
+The public status/activity widget uses Lanyard's public API; it does not require an environment variable. Jake needs to join the Lanyard Discord community and enable the relevant Discord activity privacy settings for presence/activity to be visible.
 
-## Admin
+## Security notes
 
-Open `/admin.html` and sign in with the authorized Discord account. Content is stored in Upstash Redis and can be edited across devices. Never put OAuth secrets or Redis tokens in frontend files.
+- Keep `DISCORD_CLIENT_SECRET`, `UPSTASH_REDIS_REST_TOKEN`, and `SESSION_SECRET` private.
+- Add secrets only in Vercel Project Settings → Environment Variables (or a local, ignored `.env.local` file).
+- Do not put secrets in HTML, JavaScript served to the browser, screenshots, or commits.
+- If a secret is ever exposed, rotate it in the provider dashboard.
