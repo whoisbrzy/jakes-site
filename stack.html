@@ -11,13 +11,13 @@
 <body>
 <canvas id="ascii-background" aria-hidden="true"></canvas><div class="background-vignette"></div>
 <main class="site-shell page-shell">
-<header class="topbar"><a class="brand" href="index.html" aria-label="Home">j</a><button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false"><i data-lucide="menu"></i></button></header>
+<header class="topbar"><button class="menu-toggle settings-toggle" id="menuToggle" aria-label="Open settings" aria-expanded="false"><i data-lucide="settings-2"></i></button></header>
 <div class="page-content"><div class="page-heading"><span class="eyebrow">TOOLS OF THE TRADE</span><h1>Stack</h1></div>
 <section class="details-section page-section"><div><p id="stack-content">JavaScript · TypeScript · React · Node.js · CSS</p></div><span class="section-mark"><i data-lucide="command"></i></span></section>
 </div>
 <footer class="footer"><span>© <span id="year"></span> Jake</span><a href="https://brzyx.vercel.app" target="_blank" rel="noopener noreferrer">Made by BRZY</a></footer>
 </main>
-<div class="menu-backdrop" id="menuBackdrop" hidden></div><nav class="menu-panel" id="menuPanel" aria-label="Main navigation" aria-hidden="true"><div class="menu-head"><a class="brand" href="index.html">j</a><button class="close-menu" id="closeMenu" aria-label="Close navigation"><i data-lucide="x"></i></button></div><div class="menu-items">
+<div class="menu-backdrop" id="menuBackdrop" hidden></div><nav class="menu-panel" id="menuPanel" aria-label="Main navigation" aria-hidden="true"><div class="menu-head"><span class="settings-title">Settings</span><button class="close-menu" id="closeMenu" aria-label="Close settings"><i data-lucide="x"></i></button></div><div class="menu-items">
 <a class="menu-item " href="index.html"><span class="menu-icon"><i data-lucide="house"></i></span>Home</a>
 <a class="menu-item " href="projects.html"><span class="menu-icon"><i data-lucide="folder-kanban"></i></span>Projects</a>
 <a class="menu-item active" href="stack.html"><span class="menu-icon"><i data-lucide="code-2"></i></span>Stack</a>
@@ -25,6 +25,6 @@
 <a class="menu-item" id="github-menu-link" href="#" target="_blank" rel="noreferrer" hidden><span class="menu-icon"><i data-lucide="github"></i></span>GitHub</a>
 <a class="menu-item " href="setup.html"><span class="menu-icon"><i data-lucide="monitor"></i></span>Setup</a>
 <a class="menu-item " href="contact.html"><span class="menu-icon"><i data-lucide="mail"></i></span>Contact</a>
-</div><div class="menu-handle"></div></nav>
+<a class="menu-item admin-login" href="admin.html"><span class="menu-icon"><i data-lucide="shield-check"></i></span>Admin login <i data-lucide="arrow-up-right" class="admin-arrow"></i></a></div><div class="menu-handle"></div></nav>
 <script src="https://unpkg.com/lucide@latest"></script><script src="background.js"></script><script src="script.js"></script>
 </body></html>
