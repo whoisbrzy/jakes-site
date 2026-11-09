@@ -1,81 +1,31 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#080809">
-  <meta name="description" content="Jake — full-stack developer building bots, web apps and digital products.">
-  <title>Jake — Developer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#080b16"><meta name="description" content="Jake — developer building bots, web apps and digital products.">
+<title>Jake — Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="site-shell">
-    <header class="topbar">
-      <a class="brand" href="#home" aria-label="Home">b</a>
-      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
-        <span></span><span></span>
-      </button>
-    </header>
-
-    <section class="hero" id="home">
-      <div class="hero-content">
-        <div class="status-banner">
-          <div class="avatar" aria-hidden="true">j</div>
-          <div class="status-copy">
-            <div class="status-name">j <span class="status-icons">▣ ◈ ◆</span></div>
-            <div class="status-line"><span class="online-dot"></span> Building something new</div>
-          </div>
-          <div class="status-art" aria-hidden="true">✦</div>
-        </div>
-
-        <p class="intro">Full-stack developer shipping bots, web apps, and products. Frontend since 2020, full stack since 2023. 20+ commissions and products built for people around the world.</p>
-
-        <article class="music-card" aria-label="Currently listening">
-          <div class="album-art"><span>♪</span></div>
-          <div class="track-info">
-            <strong>Currently listening</strong>
-            <span>Good music, good code.</span>
-          </div>
-          <span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
-        </article>
-
-        <nav class="social-links" aria-label="Social links">
-          <a href="https://github.com/" target="_blank" rel="noreferrer">◉ <span>GitHub</span></a>
-          <a href="https://discord.com/" target="_blank" rel="noreferrer">◈ <span>Discord</span></a>
-          <a href="https://telegram.org/" target="_blank" rel="noreferrer">➤ <span>Telegram</span></a>
-        </nav>
-        <a class="commission-link" href="#contact">♟ <span>Commissions</span><span class="arrow">↗</span></a>
-      </div>
-    </section>
-
-    <section class="details-section" id="projects"><div><span class="eyebrow">SELECTED WORK</span><h2>Projects</h2><p>A collection of things built, shipped, and still evolving.</p></div><span class="section-mark">↗</span></section>
-    <section class="details-section" id="stack"><div><span class="eyebrow">TOOLS OF THE TRADE</span><h2>Stack</h2><p>JavaScript · TypeScript · React · Node.js · CSS</p></div><span class="section-mark">⌘</span></section>
-    <section class="details-section" id="music"><div><span class="eyebrow">ON REPEAT</span><h2>Music</h2><p>Soundtrack for the next build.</p></div><span class="section-mark">♫</span></section>
-    <section class="details-section" id="setup"><div><span class="eyebrow">WORKSPACE</span><h2>Setup</h2><p>The tools and environment behind the work.</p></div><span class="section-mark">▣</span></section>
-    <section class="details-section" id="contact"><div><span class="eyebrow">HAVE A PROJECT?</span><h2>Let’s build it.</h2><p>Reach out to discuss a commission or collaboration.</p></div><a class="contact-link" href="https://discord.com/">Get in touch ↗</a></section>
-    <footer class="footer"><span>© <span id="year"></span> Jake</span><a href="https://brzyx.vercel.app" target="_blank" rel="noopener noreferrer">Made by BRZY</a></footer>
-  </main>
-
-  <div class="menu-backdrop" id="menuBackdrop" hidden></div>
-  <nav class="menu-panel" id="menuPanel" aria-label="Main navigation" aria-hidden="true">
-    <div class="menu-head">
-      <a class="brand" href="#home" aria-label="Home">b</a>
-      <button class="close-menu" id="closeMenu" aria-label="Close navigation">×</button>
-    </div>
-    <div class="menu-items">
-      <a class="menu-item active" href="#home"><span class="menu-icon">⌂</span>Home</a>
-      <a class="menu-item" href="#projects"><span class="menu-icon">▰</span>Projects</a>
-      <a class="menu-item" href="#stack"><span class="menu-icon">▱</span>Stack</a>
-      <a class="menu-item" href="#music"><span class="menu-icon">♫</span>Music</a>
-      <a class="menu-item" href="https://github.com/" target="_blank" rel="noreferrer"><span class="menu-icon">◉</span>GitHub</a>
-      <a class="menu-item" href="#setup"><span class="menu-icon">▣</span>Setup</a>
-    </div>
-    <div class="menu-handle"></div>
-  </nav>
-
-  <script src="script.js"></script>
-</body>
-</html>
+<canvas id="ascii-background" aria-hidden="true"></canvas><div class="background-vignette"></div>
+<main class="site-shell">
+<header class="topbar"><a class="brand" href="#home" aria-label="Home">j</a><button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button></header>
+<section class="hero" id="home"><div class="hero-content">
+<div class="status-banner"><img class="avatar" id="avatar" alt="" src="https://cdn.discordapp.com/embed/avatars/0.png"><div class="status-copy"><div class="status-name">Jake <span class="status-icons" id="discord-badges"></span></div><div class="status-line" id="discord-status"><span class="online-dot"></span>Checking Discord status…</div></div><div class="status-art" id="discord-activity">✦</div></div>
+<p class="intro" id="bio">Developer building bots, web apps and digital products.</p>
+<div class="music-card" id="activity-card"><div class="album-art" id="activity-art">♫</div><div class="track-info"><strong id="activity-title">Currently building</strong><span id="activity-subtitle">Usually shipping something new.</span></div><span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span></div>
+<nav class="social-links" aria-label="Social links"><a id="github-link" href="https://github.com/" target="_blank" rel="noreferrer">◉ <span>GitHub</span></a><a href="https://discord.com/users/1388360587590893649" target="_blank" rel="noreferrer">◈ <span>Discord</span></a></nav>
+<a class="commission-link" href="#contact">♟ <span>Commissions</span><span class="arrow">↗</span></a>
+</div></section>
+<section class="details-section" id="projects"><div><span class="eyebrow">SELECTED WORK</span><h2>Projects</h2><div class="project-grid" id="project-list"><p class="muted">Projects will appear here.</p></div></div><span class="section-mark">↗</span></section>
+<section class="details-section" id="stack"><div><span class="eyebrow">TOOLS OF THE TRADE</span><h2>Stack</h2><p id="stack-content">JavaScript · TypeScript · React · Node.js · CSS</p></div><span class="section-mark">⌘</span></section>
+<section class="details-section" id="music"><div><span class="eyebrow">ON REPEAT</span><h2>Music & activity</h2><p id="music-content">What Jake is listening to or playing on Discord.</p></div><span class="section-mark">♫</span></section>
+<section class="details-section" id="setup"><div><span class="eyebrow">WORKSPACE</span><h2>Setup</h2><p id="setup-content">The tools and environment behind the work.</p></div><span class="section-mark">▣</span></section>
+<section class="details-section" id="contact"><div><span class="eyebrow">HAVE A PROJECT?</span><h2>Let’s build it.</h2><p>Reach out to discuss a commission or collaboration.</p></div><a class="contact-link" href="https://discord.com/users/1388360587590893649">Message Jake ↗</a></section>
+<footer class="footer"><span>© <span id="year"></span> Jake</span><a href="https://brzyx.vercel.app" target="_blank" rel="noopener noreferrer">Made by BRZY</a></footer>
+</main>
+<div class="menu-backdrop" id="menuBackdrop" hidden></div><nav class="menu-panel" id="menuPanel" aria-label="Main navigation" aria-hidden="true"><div class="menu-head"><a class="brand" href="#home">j</a><button class="close-menu" id="closeMenu" aria-label="Close navigation">×</button></div><div class="menu-items"><a class="menu-item active" href="#home"><span class="menu-icon">⌂</span>Home</a><a class="menu-item" href="#projects"><span class="menu-icon">▰</span>Projects</a><a class="menu-item" href="#stack"><span class="menu-icon">▱</span>Stack</a><a class="menu-item" href="#music"><span class="menu-icon">♫</span>Music</a><a class="menu-item" href="https://github.com/jakeonlyiikes" target="_blank" rel="noreferrer"><span class="menu-icon">◉</span>GitHub</a><a class="menu-item" href="#setup"><span class="menu-icon">▣</span>Setup</a></div><div class="menu-handle"></div></nav>
+<script src="background.js"></script><script src="script.js"></script>
+</body></html>
