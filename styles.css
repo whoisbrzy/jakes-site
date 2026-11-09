@@ -48,3 +48,5 @@ body{background:#070912}.site-shell{z-index:1;background:rgba(13,16,28,.52);back
 .project-card{display:grid;gap:8px;padding:16px;border:1px solid #a5c3ff22;border-radius:15px;background:#ffffff08;color:#f4f3f5;text-decoration:none;transition:transform .2s,border-color .2s}
 .project-card:hover{transform:translateY(-3px);border-color:#8db5ff88}.project-card span,.muted{color:#a9afc1;font-size:14px;line-height:1.5}
 @media(max-width:520px){.project-grid{grid-template-columns:1fr}}
+
+[hidden]{display:none!important}
