@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#080809">
+  <meta name="description" content="Jake — full-stack developer building bots, web apps and digital products.">
+  <title>Jake — Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="Home">b</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="status-banner">
+          <div class="avatar" aria-hidden="true">j</div>
+          <div class="status-copy">
+            <div class="status-name">j <span class="status-icons">▣ ◈ ◆</span></div>
+            <div class="status-line"><span class="online-dot"></span> Building something new</div>
+          </div>
+          <div class="status-art" aria-hidden="true">✦</div>
+        </div>
+
+        <p class="intro">Full-stack developer shipping bots, web apps, and products. Frontend since 2020, full stack since 2023. 20+ commissions and products built for people around the world.</p>
+
+        <article class="music-card" aria-label="Currently listening">
+          <div class="album-art"><span>♪</span></div>
+          <div class="track-info">
+            <strong>Currently listening</strong>
+            <span>Good music, good code.</span>
+          </div>
+          <span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        </article>
+
+        <nav class="social-links" aria-label="Social links">
+          <a href="https://github.com/" target="_blank" rel="noreferrer">◉ <span>GitHub</span></a>
+          <a href="https://discord.com/" target="_blank" rel="noreferrer">◈ <span>Discord</span></a>
+          <a href="https://telegram.org/" target="_blank" rel="noreferrer">➤ <span>Telegram</span></a>
+        </nav>
+        <a class="commission-link" href="#contact">♟ <span>Commissions</span><span class="arrow">↗</span></a>
+      </div>
+    </section>
+
+    <footer class="footer"><span>© <span id="year"></span> Jake</span><a href="https://brzyx.vercel.app" target="_blank" rel="noopener noreferrer">Made by BRZY</a></footer>
+  </main>
+
+  <div class="menu-backdrop" id="menuBackdrop" hidden></div>
+  <nav class="menu-panel" id="menuPanel" aria-label="Main navigation" aria-hidden="true">
+    <div class="menu-head">
+      <a class="brand" href="#home" aria-label="Home">b</a>
+      <button class="close-menu" id="closeMenu" aria-label="Close navigation">×</button>
+    </div>
+    <div class="menu-items">
+      <a class="menu-item active" href="#home"><span class="menu-icon">⌂</span>Home</a>
+      <a class="menu-item" href="#projects"><span class="menu-icon">▰</span>Projects</a>
+      <a class="menu-item" href="#stack"><span class="menu-icon">▱</span>Stack</a>
+      <a class="menu-item" href="#music"><span class="menu-icon">♫</span>Music</a>
+      <a class="menu-item" href="https://github.com/" target="_blank" rel="noreferrer"><span class="menu-icon">◉</span>GitHub</a>
+      <a class="menu-item" href="#setup"><span class="menu-icon">▣</span>Setup</a>
+    </div>
+    <div class="menu-handle"></div>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>
