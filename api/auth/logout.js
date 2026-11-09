@@ -1,1 +1,1 @@
-module.exports=(req,res)=>{if(req.method!=="POST")return res.status(405).end();res.setHeader("Set-Cookie","jake_admin=; HttpOnly; Secure; SameSite=Lax; Path=/; Max-Age=0");res.status(200).json({ok:true})};
+module.exports=(req,res)=>{if(req.method!=="POST")return res.status(405).end();if(!process.env.SITE_ORIGIN||req.headers.origin!==process.env.SITE_ORIGIN)return res.status(403).json({error:"Invalid origin"});res.setHeader("Set-Cookie","jake_admin=; HttpOnly; Secure; SameSite=Lax; Path=/; Max-Age=0");res.status(200).json({ok:true})};
